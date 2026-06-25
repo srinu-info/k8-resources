@@ -1,0 +1,15 @@
+#pod is small deployable unit in kubernates cluster.
+# pods can have one or more contianers can share same network
+# and ip address, storage resiurces
+
+appVersion: app/v1
+kind: pod
+metadata:
+  name: pod
+  labels:
+    purpose: demo
+    environment: dev
+spec:
+  contianers:
+  - name: nginx
+    image: nginx
