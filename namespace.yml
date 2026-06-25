@@ -3,7 +3,7 @@
 #share saem cluster and keeping their resources separate
 
 appVersion: app/v1
-kind: namespace
+kind: Namespace
 metadata:
   name: namespace
   labels:

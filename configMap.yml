@@ -1,0 +1,12 @@
+#Config maps are used to store non sensitive inforamtion like db host ports, its better to use config map rathan than envs
+# suppose 10 pods using DB_HOST : mysql if we change that all 10 yml files need to change 
+# with we keep those details in configMap when ever changes happen we can change only configMap. all pods can consume those values
+
+appVersion: v1
+kind: configMap
+metadata:
+  name: configMap
+  labels:
+    purpose: demo
+data:
+  DB_HOST: mysql-server

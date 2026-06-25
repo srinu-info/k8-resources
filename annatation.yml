@@ -1,0 +1,17 @@
+# Annotations are key value pairs. 
+#unlike labels these are used to provide some additional metadata rather than use as selector
+
+appVersion: app/v1
+kind: Pod
+metadata:
+  name: annotations
+  labels:
+    purpose: demo
+    environment: dev
+  annotations:
+    descriptions: this pod is created to demo annotations
+    jenksins: "https://jenkins.com/build/job/roboshop-catalouge/3"
+spec:
+  contianers:
+  - name: nginx
+    image: nginx

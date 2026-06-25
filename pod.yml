@@ -3,9 +3,9 @@
 # and ip address, storage resiurces
 
 appVersion: app/v1
-kind: pod
+kind: Pod
 metadata:
-  name: pod
+  name: nginx
   labels:
     purpose: demo
     environment: dev

@@ -1,0 +1,23 @@
+#Basiclly every container have some memory and CPU, so resources are used to provide memory and CPU for container
+#request is  minimum amount of CPU and memory gurantee to contianer
+#limit is maximun amount of memory can be allowed to use
+
+appVersion: v1
+kind: Pod
+metadata:
+  name: annotations
+  labels:
+    purpose: demo
+  annotations:
+    owner: srinu
+spec:
+  container:
+  - name: nginx
+    image: nginx
+    resources:
+      request:
+        memory: "68mi"
+        cpu: "100m"
+      limit:
+        memory: "128mi"
+        cpu: "150m"
