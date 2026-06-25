@@ -3,7 +3,7 @@
 # with we keep those details in configMap when ever changes happen we can change only configMap. all pods can consume those values
 
 appVersion: v1
-kind: configMap
+kind: ConfigMap
 metadata:
   name: configMap
   labels:

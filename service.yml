@@ -1,0 +1,34 @@
+#service in kubernates are used to provide stable network end points to access one or more pods
+#if app is running in one pod andif pod down or crash new pod will create with new IP address. if another app using old ip the app will fail
+# service know which pod to send traffic by using labels and selectors
+
+#clustor-ip: used to communicate inside kubernate clustor this servic give clustor ip
+
+appVersion: v1
+kind: Service
+metadata:
+  name: nginx
+  labels:
+    purpose: service-demo    
+spec:
+  selector:
+    purpose: demo
+    environment: dev
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+
+
+--
+appVersion: app/v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    purpose: demo
+    environment: dev
+spec:
+  contianers:
+  - name: nginx
+    image: nginx
