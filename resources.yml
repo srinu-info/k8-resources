@@ -2,7 +2,7 @@
 #request is  minimum amount of CPU and memory gurantee to contianer
 #limit is maximun amount of memory can be allowed to use
 
-appVersion: v1
+apiVersion: v1
 kind: Pod
 metadata:
   name: annotations

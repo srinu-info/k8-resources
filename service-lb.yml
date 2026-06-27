@@ -3,7 +3,7 @@
 # service know which pod to send traffic by using labels and selectors
 
 #loadbalancer: create loadbalancer automatically
-appVersion: v1
+apiVersion: v1
 kind: Service
 metadata:
   name: nginx-lb

@@ -4,7 +4,7 @@
 
 #clustor-ip: used to communicate inside kubernate clustor this servic give clustor ip
 
-appVersion: v1
+apiVersion: v1
 kind: Service
 metadata:
   name: nginx

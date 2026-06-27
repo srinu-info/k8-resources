@@ -2,7 +2,7 @@
 # suppose 10 pods using DB_HOST : mysql if we change that all 10 yml files need to change 
 # with we keep those details in configMap when ever changes happen we can change only configMap. all pods can consume those values
 
-appVersion: v1
+apiVersion: v1
 kind: ConfigMap
 metadata:
   name: configMap

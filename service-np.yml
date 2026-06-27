@@ -4,7 +4,7 @@
 
 #node-port: Expose application using port on every worker node
 
-appVersion: v1
+apiVersion: v1
 kind: Service
 metadata:
   name: nginx-np
