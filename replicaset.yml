@@ -2,7 +2,7 @@
 # with out replicaset if pods crash no pod will create and app will unavailable
 # with replica set if one pod goes down it will create another
 
-apiVersion: v1
+apiVersion: app/v1
 kind: ReplicaSet
 metadata:
   name: nginx
