@@ -8,11 +8,11 @@ metadata:
     purpose: demo
     environment: dev
 spec:
-  contianers:
+  containers:
   - name: nginx
     image: nginx
     env:
     - name: DB_HOST
       value: postgrey-service
-    - name: env
+    - name: ENV
       value: DEV
