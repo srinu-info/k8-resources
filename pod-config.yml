@@ -6,7 +6,7 @@ metadata:
     purpose: demo
     environment: dev
 spec:
-  contianers:
+  containers:
   - name: nginx
     image: nginx
     envFrom:

@@ -12,6 +12,6 @@ metadata:
     descriptions: this pod is created to demo annotations
     jenksins: "https://jenkins.com/build/job/roboshop-catalouge/3"
 spec:
-  contianers:
+  containers:
   - name: nginx
     image: nginx

@@ -11,7 +11,7 @@ metadata:
   annotations:
     owner: srinu
 spec:
-  container:
+  containers:
   - name: nginx
     image: nginx
     resources:
