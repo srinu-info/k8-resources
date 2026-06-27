@@ -9,4 +9,4 @@ metadata:
   labels:
     purpose: demo
 data:
-  DB_HOST: mysql-server
+  COURSE: "DevOps"
