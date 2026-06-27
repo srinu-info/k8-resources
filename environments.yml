@@ -1,6 +1,6 @@
 #env are configuration values passed to container like database url , username, password
 
-appVersion: app/v1
+appVersion: v1
 kind: Pod
 metadata:
   name: environment

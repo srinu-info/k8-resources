@@ -1,7 +1,7 @@
 #lables are key value pairs, that can add to kubernates resourced
 #like deployments, pod. labels used as selector to select resources
 
-appVersion: app/v1
+appVersion: v1
 kind: Pod
 metadata:
   name: labels

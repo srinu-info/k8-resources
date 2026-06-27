@@ -2,7 +2,7 @@
 # pods can have one or more contianers can share same network
 # and ip address, storage resiurces
 
-appVersion: app/v1
+appVersion: v1 
 kind: Pod
 metadata:
   name: nginx

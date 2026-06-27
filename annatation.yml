@@ -1,7 +1,7 @@
 # Annotations are key value pairs. 
 #unlike labels these are used to provide some additional metadata rather than use as selector
 
-appVersion: app/v1
+appVersion: v1
 kind: Pod
 metadata:
   name: annotations
