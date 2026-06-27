@@ -20,8 +20,8 @@ spec:
       targetPort: 80
 
 
---
-appVersion: app/v1
+---
+apiVersion: v1
 kind: Pod
 metadata:
   name: nginx-lb
