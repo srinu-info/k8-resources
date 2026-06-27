@@ -8,3 +8,7 @@ metadata:
   labels:
     purpose: demo
     environment: dev
+spec:
+  container:
+  - name: nginx
+    image: nginx
