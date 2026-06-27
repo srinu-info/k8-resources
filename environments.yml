@@ -12,7 +12,7 @@ spec:
   - name: nginx
     image: nginx
     env:
-      name: DB_HOST
-      value: postgrey0=-service
-      name: env
+    - name: DB_HOST
+      value: postgrey-service
+    - name: env
       value: DEV
