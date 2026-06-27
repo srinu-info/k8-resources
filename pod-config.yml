@@ -11,4 +11,4 @@ spec:
     image: nginx
     envFrom:
       - configMapRef:
-          name: configMap
+          name: pod-config
