@@ -3,7 +3,7 @@
 # with replica set if one pod goes down it will create another
 
 apiVersion: apps/v1
-kind: Deploment
+kind: Deployment
 metadata:
   name: nginx
   labels:
