@@ -8,7 +8,7 @@ spec:
   capacity:
     storage: 5Gi
   volumeMode: Filesystem
-  persistenetVolumeReclaimPolicy: Retain
+  persistentVolumeReclaimPolicy: Retain
   csi:
     driver: efs.csi.aws.com
     volumeHandle: fs-0d385c1a2dfca68ae
