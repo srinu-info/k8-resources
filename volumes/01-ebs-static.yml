@@ -3,7 +3,7 @@ kind: PersistentVolume
 metadata:
   name: ebs-static
 spec:
-  accessMode:
+  accessModes:
   - ReadWriteOnce
   capacity:
     storage: 20Gi
@@ -13,13 +13,13 @@ spec:
     volumeHandle: vol-04c5e170b01dbd4a3
 ---
 apiVersion: v1
-kind: persistentVolumeClaim
+kind: PersistentVolumeClaim
 metadata:
   name: ebs-static
 spec:
   storageClassName: ""
   volumeName: ebs-static
-  accessMode:
+  accessModes:
     - ReadWriteOnce
   resources:
     requests:
@@ -33,6 +33,8 @@ metadata:
     purpose: ebs-static-demo
     project: roboshop
 spec:
+  nodeSeletcor:
+    topology.kubernates.io/zone: us-east-1a
   containers:
   - name: nginx
     image: nginx
